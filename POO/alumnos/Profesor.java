@@ -3,7 +3,7 @@ package POO.alumnos;
 public class Profesor {
 
     //Método para poner notas
-    public void ponerNotas(Alumno alumno){
+    public static void ponerNotas(Alumno alumno){
 
         // Asignar las notas a las asignaturas
         alumno.getAsignatura1().setCalificacion(Math.random()*10);
@@ -11,7 +11,7 @@ public class Profesor {
         alumno.getAsignatura3().setCalificacion(Math.random()*10);
     }
 
-    public double calucularMedia(Alumno alumno) {
+    public static double calucularMedia(Alumno alumno) {
 
         double calificacion1 = alumno.getAsignatura1().getCalificacion();
         double calificacion2 = alumno.getAsignatura2().getCalificacion();

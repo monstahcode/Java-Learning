@@ -10,6 +10,10 @@ public class Nif {
         this.letra_DNI = letra_DNI;
     }
 
+    public Nif() {
+        System.out.println("NIF no válido");
+    }
+
     // methods
     public String mostrarNif() {
         return (n_DNI + "-" + letra_DNI);

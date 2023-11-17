@@ -12,11 +12,9 @@ public class MediaAlumno {
 
         Alumno alumno = new Alumno(asignatura1, asignatura2, asignatura3);
 
-        Profesor profesor = new Profesor();
+        Profesor.ponerNotas(alumno);
 
-        profesor.ponerNotas(alumno);
-
-        double mediaAlumno = profesor.calucularMedia(alumno);
+        double mediaAlumno = Profesor.calucularMedia(alumno);
         System.out.println("La media del alumno es: " + mediaAlumno);
     }
 }
