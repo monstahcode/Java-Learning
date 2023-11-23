@@ -12,7 +12,7 @@ public class Titular {
         this.fecha = fecha;
     }
     
-    //Getters y Setters
+    //Getters y Setter
     public void setNif(String nif) {
         this.nif = nif;
     }
