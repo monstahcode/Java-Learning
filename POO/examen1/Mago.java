@@ -49,6 +49,7 @@ public class Mago {
             int contador = 0;
             for (int i = 0; i < this.nombre.length(); i++) {
                 // Comprobación de las vocales
+                // TODO Esta mal corregir
                 if (this.nombre.charAt(i) == 'A' ||this.nombre.charAt(i) == 'E' || this.nombre.charAt(i) == 'I' || this.nombre.charAt(i) == 'O' || this.nombre.charAt(i) == 'U' || this.nombre.charAt(i) == 'a' ||this.nombre.charAt(i) == 'e' || this.nombre.charAt(i) == 'i' || this.nombre.charAt(i) == 'o' || this.nombre.charAt(i) == 'u') {
                     contador++;
                 }
