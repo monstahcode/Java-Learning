@@ -1,0 +1,10 @@
+// Hay que usar la opción -cp para indicar la ruta de la librería de MySQL
+
+javac -cp $PATH:{librería} {ruta}/{nombre del archivo}.java
+java -cp $PATH:{librería} {ruta}.{nombre del archivo}
+
+EJ:
+javac -cp /home/monstah/Clases/DW1A/Programación/Java:mysql-connector-j-8.3.0.jar POO/bbddConect/Ejercicios/Agenda/Main.java
+ java -cp /home/monstah/Clases/DW1A/Programación/Java:mysql-connector-j-8.3.0.jar POO.bbddConect.Ejercicios.Agenda.Main
+
+ 

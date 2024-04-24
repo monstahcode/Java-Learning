@@ -11,9 +11,18 @@ public class Paladin extends Personaje {
             this.bendecido = false;
         }
     }
-
+    
     public boolean isBendecido() {
     	return bendecido;
+    }
+
+    // metodo donde si bedecido en true los atributos suman 10
+    public void setBendecido() {
+        if (bendecido) {
+            this.ataque += 10;
+            this.salud += 10;
+            this.defensa += 10;
+        }
     }
 
     public void setBendecido(boolean bendecido) {
