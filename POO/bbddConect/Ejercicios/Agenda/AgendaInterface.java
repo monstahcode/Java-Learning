@@ -11,16 +11,16 @@ public interface AgendaInterface {
     public void desconectar();
 
     // Métodos para trabajar con la bbdd
-    public String insertar(JTextField txtNombre, JTextField txtApellido, JTextField txtTelefono, JTextField txtEmail);
-    public String modificar(JTextField txtId, JTextField txtNombre, JTextField txtApellido, JTextField txtTelefono, JTextField txtEmail);
-    public String eliminar(JTextField id);
+    public void insertar(JTextField txtNombre, JTextField txtApellido, JTextField txtTelefono, JTextField txtEmail);
+    public void modificar(JTextField txtId, JTextField txtNombre, JTextField txtApellido, JTextField txtTelefono, JTextField txtEmail);
+    public void eliminar(JTextField id);
     public void buscar(JTextField id);
 
     // Métodos para navegar por los registros
-    public void irAlPrimero();
-    public void irAlAnterior();
-    public void irAlSiguiente();
-    public void irAlUltimo(); 
+    public void irAlPrimero(JTextField txtId, JTextField txtNombre, JTextField txtApellido, JTextField txtTelefono, JTextField txtEmail);
+    public void irAlAnterior(JTextField txtId, JTextField txtNombre, JTextField txtApellido, JTextField txtTelefono, JTextField txtEmail);
+    public void irAlSiguiente(JTextField txtId, JTextField txtNombre, JTextField txtApellido, JTextField txtTelefono, JTextField txtEmail);
+    public void irAlUltimo(JTextField txtId, JTextField txtNombre, JTextField txtApellido, JTextField txtTelefono, JTextField txtEmail); 
     public boolean comprobarCamposInsert(JTextField txtNombre, JTextField txtApellido, JTextField txtTelefono, JTextField txtEmail);
     public boolean comprobarCampos(JTextField txtId, JTextField txtNombre, JTextField txtApellido, JTextField txtTelefono, JTextField txtEmail);
 }
